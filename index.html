@@ -33,19 +33,20 @@
     }
 
     .logo {
-      text-align: center;
-    }
+  text-align: center;
+}
 
-    .logo img {
-      height: 120px;
-    }
+.logo img {
+  height: 120px;
+}
 
-    .udise {
-      margin-top: 6px;
-      font-size: 15px;
-      font-weight: 600;
-      letter-spacing: 0.4px;
-    }
+.udise {
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+}
 
     .header-text {
       text-align: center;
@@ -83,7 +84,127 @@
       .logo img { height: 95px; margin: auto; }
     }
 
-    /* बाकीचा कोड जशास तसा */
+    /* ===== BACKGROUND ===== */
+    .main-wrapper {
+      background:
+        linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+        url("bg1.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 35px 22px;
+    }
+
+    /* ===== TREE TITLE ===== */
+    .tree-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .tree-title h1 {
+      font-size: 46px;
+    }
+
+    .tree-title p {
+      font-size: 18px;
+      color: #33691e;
+    }
+
+    .tree-image {
+      width: 360px;
+      height: 300px;
+      margin: 28px auto;
+      border-radius: 20px;
+      background: linear-gradient(145deg, #e8f5e9, #c8e6c9);
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    .tree-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      background: linear-gradient(to bottom right, #ffffff, #f1fff3);
+      padding: 32px;
+      margin-bottom: 38px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    section h2 {
+      border-bottom: 3px solid #81c784;
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+      font-size: 28px;
+    }
+
+    section p {
+      text-align: justify;
+    }
+
+    /* ===== CARDS ===== */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: linear-gradient(to bottom right, #ffffff, #e8f5e9);
+      padding: 22px;
+      border-radius: 14px;
+      border-left: 6px solid #2e7d32;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* ===== CIRCULAR CARDS ===== */
+    .circular-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .circular-card {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #e8f5e9, #a5d6a7);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 28px;
+      border: 6px solid #2e7d32;
+    }
+
+    .circular-card p {
+      text-align: center;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: linear-gradient(to right, #2e7d32, #66bb6a);
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+    }
   </style>
 </head>
 
@@ -92,16 +213,13 @@
 <header>
   <div class="header-container">
     <div class="logo">
-      <img src="pm logo.png" alt="PM SHRI Logo">
-      <div class="udise">UDISE : 27150107301</div>
-    </div>
-
+  <img src="pm logo.png" alt="PM SHRI Logo">
+  <div class="udise">UDISE : 27150107301</div>
+</div>
     <div class="header-text">
       <h1>पीएम श्री जिल्हा परिषद हायस्कूल, विष्णुपूरी नांदेड</h1>
-      <h2>शिक्षक-शिक्षिका व शिक्षकेतर कर्मचारी वृंद</h2>
-      <p>(शैक्षणिक वर्ष 2025–26)</p>
+      <h2>शिक्षक-शिक्षिका व शिक्षकेतर कर्मचारी वृंद (शैक्षणिक वर्ष 2025–26)</p>
     </div>
-
     <div class="email">
       E-mail ID<br>
       <strong>zphsvishnupuri@gmail.com</strong>
@@ -109,6 +227,141 @@
   </div>
 </header>
 
+<div class="main-wrapper">
+<main>
+
+<div class="tree-title">
+  <h1>🌸 कण्हेर</h1>
+  <p>
+    English Name : Oleander<br>
+    <i>Scientific Name : Nerium oleander</i>
+  </p>
+  <div class="tree-image">
+    <img src="Oleander.jpg" alt="कण्हेर">
+  </div>
+</div>
+
+<section>
+  <h2>संक्षिप्त परिचय</h2>
+  <p>
+    कण्हेर (Nerium oleander) हे Apocynaceae कुलातील एक सदाहरित व शोभेचे झुडूप आहे.
+   ही वनस्पती प्रामुख्याने झुडूप स्वरूपाची असून कधी कधी लहान झाडाच्या आकारातही वाढते.
+कण्हेरचे मूळ स्थान भूमध्य सागर परिसर, उत्तर आफ्रिका आणि दक्षिण-पश्चिम आशिया मानले जाते.
+आज ही वनस्पती जगभरातील उष्ण व उपोष्ण प्रदेशांमध्ये मोठ्या प्रमाणावर आढळते.
+भारतामध्ये कण्हेर रस्त्यांच्या दुतर्फा, उद्याने, शाळा, महाविद्यालये व सार्वजनिक ठिकाणी लावली जाते.
+ही वनस्पती उष्ण हवामानात सहज वाढते.
+कमी पाणी उपलब्ध असतानाही कण्हेर चांगली वाढू शकते.
+त्यामुळे दुष्काळी किंवा अर्धकोरड्या भागातही ती उपयुक्त ठरते.
+कण्हेरची पाने लांबट, अरुंद व चकचकीत असतात.
+ही पाने बहुधा जोड्यांमध्ये किंवा वलयाकृती स्वरूपात उगवतात.
+खोड कापल्यास किंवा जखमी झाल्यास त्यातून दुधासारखा पांढरा रस बाहेर येतो.
+हा रस अत्यंत विषारी असतो.
+कण्हेरची फुले मोठी, सुंदर व आकर्षक असतात.
+ही फुले पांढऱ्या, गुलाबी, लाल, पिवळ्या किंवा जांभळट रंगांची असू शकतात.
+फुले बहुधा गुच्छांमध्ये उमलतात.
+उन्हाळा व वसंत ऋतूत कण्हेर अधिक प्रमाणात फुललेली दिसते.
+कण्हेरच्या सौंदर्यामुळे ती शोभेच्या वनस्पती म्हणून प्रसिद्ध आहे.
+जगभरातील बागकामामध्ये कण्हेरला विशेष महत्त्व दिले जाते.
+ही वनस्पती प्रदूषण सहन करण्याची क्षमता ठेवते.
+म्हणूनच शहरांमध्ये व औद्योगिक भागातही कण्हेर लावली जाते.
+कण्हेरचे आयुष्य तुलनेने जास्त असते.
+योग्य काळजी घेतल्यास ही वनस्पती अनेक वर्षे टिकते.
+कण्हेरच्या सर्व भागांमध्ये विषारी घटक असतात.
+पाने, फुले, खोड, बिया व मुळे सर्वच भाग विषारी आहेत.
+या वनस्पतीमध्ये कार्डियाक ग्लायकोसाइड्स नावाचे रसायन आढळते.
+हे रसायन हृदयावर परिणाम करू शकते.
+कण्हेरचे सेवन केल्यास गंभीर विषबाधा होऊ शकते.
+मानवांसोबतच प्राणी व पक्ष्यांसाठीही कण्हेर विषारी आहे.
+इतिहासात कण्हेरच्या विषामुळे अनेक अपघात घडल्याचे उल्लेख आढळतात.
+तरीसुद्धा योग्य प्रमाणात व वैद्यकीय मार्गदर्शनाखाली कण्हेरचा उपयोग पारंपरिक औषधांमध्ये केला गेला आहे.
+प्राचीन काळात काही संस्कृतींमध्ये कण्हेरचा उपयोग औषधी वनस्पती म्हणून केला जात होता.
+मात्र आधुनिक वैद्यकशास्त्रात कण्हेरचा थेट वापर टाळला जातो.
+कण्हेरची लागवड करणे तुलनेने सोपे आहे.
+ही वनस्पती कलमांद्वारे सहज वाढवता येते.
+कण्हेरला फारशी खतांची गरज नसते.
+साधारण जमिनीतही ती चांगली वाढते.
+सामाजिकदृष्ट्या कण्हेरला सौंदर्य व सहनशीलतेचे प्रतीक मानले जाते.
+कठीण परिस्थितीतही फुलणारी वनस्पती म्हणून ती मानवी जिद्दीचे प्रतीक ठरते.
+काही देशांमध्ये कण्हेरला स्मरणचिन्ह किंवा सजावटीच्या प्रतीकात्मक अर्थाने पाहिले जाते.
+भारतात धार्मिक स्थळांच्या परिसरात कण्हेर लावलेली दिसते.
+कण्हेरच्या फुलांचा उपयोग फुलसजावटीसाठी केला जातो.
+तथापि धार्मिक वापर करताना विषारी गुणधर्म लक्षात घेणे आवश्यक असते.
+साहित्य व काव्यामध्ये कण्हेरच्या सौंदर्याचा उल्लेख आढळतो.
+काही लोककथांमध्ये कण्हेरचा उल्लेख सुंदर पण धोकादायक वनस्पती म्हणून केला जातो.
+आज कण्हेर ही प्रामुख्याने शोभेची व पर्यावरणपूरक वनस्पती म्हणून ओळखली जाते.
+योग्य जागी व योग्य काळजीसह लावल्यास कण्हेर पर्यावरण व सौंदर्य दोन्ही वाढवते.
+  </p>
+</section>
+
+<section>
+  <h2>वनस्पतीशास्त्रीय माहिती</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>🌿 कुल</h3>
+      <p>
+        Apocynaceae (अपोसिनिएसी)
+      </p>
+    </div>
+    <div class="card">
+      <h3>🌱 रचना</h3>
+      <p>
+        पाने लांबट व जाड, खोडातून दुधासारखा विषारी रस स्रवतो.
+      </p>
+    </div>
+    <div class="card">
+      <h3>🌼 फुले</h3>
+      <p>
+        फुले मोठी, रंगीबेरंगी व समूहाने उमलणारी असतात.
+      </p>
+    </div>
+    <div class="card">
+      <h3>🌍 अधिवास</h3>
+      <p>
+        उष्ण व कोरड्या प्रदेशात तसेच नदीकाठच्या भागात चांगली वाढते.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>सामाजिक व सांस्कृतिक महत्त्व</h2>
+  <p>
+    कण्हेरला विविध संस्कृतींमध्ये सौंदर्य, सहनशीलता व टिकावाचे प्रतीक मानले जाते.
+    प्राचीन काळापासून कण्हेरचा उपयोग उद्याने व सार्वजनिक जागांची शोभा वाढवण्यासाठी केला जात आहे.
+    भारतात मंदिर परिसर, शाळा व रस्त्यांच्या दुतर्फा कण्हेर लावली जाते.
+    कठीण हवामानातही टिकून राहण्याच्या क्षमतेमुळे ही वनस्पती मानवी जिद्द व सहनशक्तीचे प्रतीक मानली जाते.
+    काही लोकसाहित्य व कथांमध्ये कण्हेरच्या सौंदर्याबरोबरच तिच्या विषारी स्वभावाचाही उल्लेख आढळतो.
+  </p>
+</section>
+
+<section>
+  <h2>काळजी व धोके</h2>
+  <div class="circular-container">
+    <div class="circular-card">
+      <div>
+        <h3>⚠️ विषारी वनस्पती</h3>
+        <p>
+          कण्हेरचे पाने, फुले व खोड सर्वच भाग विषारी असतात.
+        </p>
+      </div>
+    </div>
+    <div class="circular-card">
+      <div>
+        <h3>👶 सुरक्षितता</h3>
+        <p>
+          लहान मुले व जनावरे यांना कण्हेरपासून दूर ठेवावे.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<footer>
+  © 2025–26 | झाडांची माहिती | PM SHRI ZP High School, Vishnupuri, Nanded
+</footer>
+
 </body>
 </html>
-
